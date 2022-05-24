@@ -1475,7 +1475,7 @@ footer {
 	margin-bottom: 10px;
 }
 
-.aboutservice-aside__bullets .bullets-withplus__item:first-child {
+.aboutservice-aside__bullets .bullets-withplus__item {
 	position: relative;
 }
 
@@ -1488,6 +1488,18 @@ footer {
 	border: 1px solid #FFFFFF;
 	position: absolute;
 	bottom: -35px;
+	left: 0;
+}
+
+.aboutservice-aside__bullets .bullets-withplus__item:nth-child(5)::before {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 50vw;
+	opacity: 0.2;
+	border: 1px solid #FFFFFF;
+	position: absolute;
+	top: -35px;
 	left: 0;
 }
 
@@ -2269,6 +2281,117 @@ ul.cover-sticker-list {
 
 
 
+.pocket-descrip .title {
+	color: #fff;
+	margin-bottom: 70px;
+}
+
+.pocket-card {
+	background: #F8F8F8;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+}
+
+.pocket-card__img {
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	height: auto;
+	min-height: 300px;
+	align-self: stretch;
+	width: 430px;
+	flex-shrink: 0;
+}
+
+.pocket-card__main {
+	padding: 15px 30px 30px;
+	flex-grow: 1;
+}
+
+.pocket-card__top {
+	background: #151515;
+	border-radius: 12px;
+	padding: 15px 30px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px 25px;
+}
+
+.pocket-card__top-title {
+	font-weight: 600;
+	font-size: 24px;
+	color: #FFFFFF;
+	white-space: nowrap;
+}
+
+.pocket-card__top-text {
+	font-size: 14px;
+	line-height: 120%;
+	color: #FFFFFF
+}
+
+ul.pocket-card__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 10px;
+	margin: 35px 0 50px 0;
+}
+
+.pocket-card__list li {
+	padding-left: 25px;
+	position: relative;
+	font-size: 16px;
+	line-height: 19px;
+	color: #151515;
+	margin-bottom: 4px;
+}
+
+.pocket-card__list li span {
+	font-family: 'IgraSans', sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+}
+
+.pocket-card__list li::before {
+	content: '';
+	display: block;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+.pocket-card__bottom {
+	display: flex;
+	gap: 20px 60px;
+}
+
+.pocket-card__price-title {
+	font-size: 14px;
+	line-height: 120%;
+	margin-bottom: 5px;
+}
+
+.pocket-card__price-price {
+	font-family: 'IgraSans', sans-serif;
+	font-size: 28px;
+	font-weight: 100%;
+	letter-spacing: 0.02em;
+	white-space: nowrap;
+}
+
+.pocket-card__bottom .btn-orange {
+	flex-grow: 1;
+}
+
+
+
+
 /* выпадающее меню */
 .dropdown {
 	position: relative;
@@ -2347,15 +2470,6 @@ ul.cover-sticker-list {
 	visibility: visible;
 	transform: rotateX(0deg) !important;
 }
-
-
-
-
-
-
-
-
-
 
 /* Попап */
 .popup__overlay {
@@ -2685,6 +2799,10 @@ ul.cover-sticker-list {
 	.pockages-item.slick-center {
 		transform: scale(1);
 		opacity: 1;
+	}
+
+	.pocket-card__img {
+		width: 25%;
 	}
 }
 
@@ -3033,6 +3151,7 @@ ul.cover-sticker-list {
 		margin-bottom: 50px;
 	}
 
+	.aboutservice-aside__bullets .bullets-withplus__item:nth-child(5)::before,
 	.aboutservice-aside__bullets .bullets-withplus__item:first-child::before {
 		width: calc(100vw - 60px);
 	}
@@ -3144,6 +3263,22 @@ ul.cover-sticker-list {
 	.delay09 {
 		transition-delay: 0s;
 	}
+
+	.pocket-card {
+		flex-direction: column;
+	}
+
+	.pocket-card__img {
+		width: 100%;
+	}
+
+	.pocket-card__main {
+		padding: 30px 25px;
+	}
+
+	.pocket-descrip .title {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -3178,6 +3313,27 @@ ul.cover-sticker-list {
 
 	.reviews-slider .slick-prev {
 		left: calc(50% - 40px);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	ul.pocket-card__list {
+		display: block;
+	}
+
+	ul.pocket-card__list {
+
+		margin-bottom: 30px;
+	}
+
+	.pocket-card__bottom {
+		flex-direction: column;
+		padding-top: 20px;
+		border-top: 1px solid #C4C4C4;
+	}
+
+	.pocket-card__price {
+		text-align: center;
 	}
 }
 
@@ -3348,6 +3504,10 @@ ul.cover-sticker-list {
 
 	.aboutservice-aside__bullets .bullets-withplus__item:first-child::before {
 		bottom: -20px;
+	}
+
+	.aboutservice-aside__bullets .bullets-withplus__item:nth-child(5)::before {
+		top: -20px;
 	}
 
 	.pockets__price span {
@@ -3599,5 +3759,13 @@ ul.cover-sticker-list {
 
 	.pockages-item .btn-orange {
 		padding: 5px 15px;
+	}
+
+	.pocket-card__list li {
+		font-size: 15px;
+	}
+
+	.pocket-card__bottom .btn-orange {
+		padding: 5px 10px;
 	}
 }
