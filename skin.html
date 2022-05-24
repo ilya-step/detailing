@@ -59,11 +59,21 @@
 	<span class="header-padding"></span>
 
 	<section class="opening-main skin-page">
+		<img src="assets/img/skin-opening-bg.jpg" alt="" class="img img-animate">
 		<nav class="menubox">
 			<div class="wrapper">
 				<div class="menubox__inner">
 					<ul class="menu-proj">
-						<li><a href="#" class="menu-item">Программы детейлинга</a></li>
+						<div class="dropdown">
+							<button data-path="one" class="dropdown-toggle">
+								Программы детейлинга
+							</button>
+							<ul data-target="one" class="dropdown-menu">
+								<li><a class="menu-item" href="#">Пакет Старт</a></li>
+								<li><a class="menu-item" href="#">Пакет Минимал</a></li>
+								<li><a class="menu-item" href="#">Пакет Стандарт</a></li>
+							</ul>
+						</div>
 						<li><a href="#" class="menu-item">Экстерьер</a></li>
 						<li><a href="#" class="menu-item">Интерьер</a></li>
 						<li><a href="#" class="menu-item">Под капотом</a></li>
@@ -81,19 +91,19 @@
 			</div>
 		</nav>
 		<div class="page-opening wrapper">
-			<div class="page-opening__text">
+			<div class="page-opening__text animated left">
 				<p class="yellow-title">
 					Без следа
 				</p>
 				<div class="pl">
-					<h1 class="title">
+					<h1 class="title animated right">
 						защита кожи и текстиля
 					</h1>
-					<p class="page-opening__subtitle">
+					<p class="page-opening__subtitle animated right delay03">
 					</p>
 				</div>
 			</div>
-			<a href="#" class="btn-orange hover-invert popup__toggle-1">
+			<a href="#" class="btn-orange hover-invert popup__toggle-1 animated left">
 				Подобрать программу +
 			</a>
 		</div>
@@ -101,14 +111,14 @@
 
 	<section class="aboutservice wrapper">
 		<div class="aboutservice-info">
-			<p class="yellow-title">
+			<p class="yellow-title animated left">
 				Защита
 			</p>
 			<div class="pl">
-				<h2 class="title">
+				<h2 class="title animated right">
 					Кожи и текстиля
 				</h2>
-				<div class="aboutservice-info__text">
+				<div class="aboutservice-info__text  animated left">
 					<p>
 						Технология, позволяющая содержать салон автомобиля в идеальной чистоте.
 					</p>
@@ -126,19 +136,19 @@
 		</div>
 		<div class="aboutservice-aside">
 			<div class="aboutservice-aside__img">
-				<div class="aboutservice-aside__img-inner">
+				<div class="aboutservice-aside__img-inner animated right">
 					<img src="assets/img/z350.jpg" alt="" class="img">
 				</div>
 			</div>
 			<div class="aboutservice-aside__price-wrapper">
 				<div class="aboutservice-aside__price">
-					<div class="aboutservice-aside__price-item">
+					<div class="aboutservice-aside__price-item animated right">
 						Защита кожи: <span>от 35 000 ₽</span>
 					</div>
-					<div class="aboutservice-aside__price-item">
+					<div class="aboutservice-aside__price-item animated right">
 						Защита текстиля: <span>от 35 000 ₽</span>
 					</div>
-					<a href="#" class="btn-orange hover-invert popup__toggle-1">
+					<a href="#" class="btn-orange hover-invert popup__toggle-1 animated right">
 						Заказать защиту +
 					</a>
 				</div>
@@ -148,14 +158,14 @@
 
 	<section class="topresult wrapper mb-100">
 		<div class="topresult-title">
-			<p class="yellow-title">
+			<p class="yellow-title animated left">
 				Результат,
 			</p>
-			<h2 class="title pl">
+			<h2 class="title pl animated right">
 				которого вы достойны
 			</h2>
 		</div>
-		<div class="result-slider">
+		<div class="result-slider animated bot">
 			<div class="result-slider-item">
 				<div class="prev-block">
 					<p class="nav-title">
@@ -306,16 +316,16 @@
 
 	<section class="about-main mb-100">
 		<div class="wrapper">
-			<p class="yellow-title">
+			<p class="yellow-title animated left">
 				О компании
 			</p>
-			<h2 class="title pl">
+			<h2 class="title pl animated left">
 				Эффективный<br>
 				комплексный подход
 			</h2>
 			<div class="about-main-wrapper">
 				<div class="about-main-info">
-					<div class="about-main__text">
+					<div class="about-main__text animated left">
 						<p>
 							В своей работе мы применяем технологии безабразивного удаления царапин и локальной покраски,
 							что позволяет максимально сохранять родное лакокрасочное покрытие автомобиля.
@@ -325,7 +335,7 @@
 							какого-либо повреждения деталей автомобиля в процессе проведения работ.
 						</p>
 					</div>
-					<div class="about-main__vid">
+					<div class="about-main__vid animated left">
 						<p class="about-main__vid-title">
 							Смотреть<br>
 							видео о нашем центре
@@ -338,7 +348,7 @@
 						</div>
 					</div>
 					<div class="bullets-withplus">
-						<div class="bullets-withplus__item">
+						<div class="bullets-withplus__item animated bot">
 							<span class="plus-icon"></span>
 							<p class="bullets-withplus__title">
 								7 лет
@@ -347,7 +357,7 @@
 								на рынке
 							</p>
 						</div>
-						<div class="bullets-withplus__item">
+						<div class="bullets-withplus__item animated bot delay03">
 							<span class="plus-icon"></span>
 							<p class="bullets-withplus__title">
 								650 +
@@ -356,7 +366,7 @@
 								довольных клиентов
 							</p>
 						</div>
-						<div class="bullets-withplus__item">
+						<div class="bullets-withplus__item animated bot delay06">
 							<span class="plus-icon"></span>
 							<p class="bullets-withplus__title">
 								15
@@ -367,7 +377,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="about-main-img">
+				<div class="about-main-img animated right">
 					<img src="assets/img/911.jpg" alt="" class="img">
 				</div>
 			</div>
@@ -376,13 +386,13 @@
 
 	<section class="reviews mb-100">
 		<div class="wrapper">
-			<p class="yellow-title">
+			<p class="yellow-title animated left">
 				Отзывы
 			</p>
-			<h2 class="title pl">
+			<h2 class="title pl animated right">
 				о нашей работе
 			</h2>
-			<div class="reviews-slider">
+			<div class="reviews-slider animated bot">
 				<a href="assets/img/review.jpg" class="reviews-slider-img" data-fancybox="gallery-1">
 					<img src="assets/img/review.jpg" alt="">
 				</a>
@@ -402,7 +412,7 @@
 		</div>
 	</section>
 
-	<section class="banner-form wrapper mb-100">
+	<section class="banner-form wrapper mb-100 animated left">
 		<div class="banner-form-inner">
 			<div class="banner-form__img">
 				<img src="assets/img/z350.jpg" alt="" class="img">
